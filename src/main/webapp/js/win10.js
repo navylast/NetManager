@@ -364,9 +364,9 @@ var Win10 = {
             }
         });
         //打广告
-        setTimeout(function () {
+        /*setTimeout(function () {
             //console.log(Win10.lang('本页由Win10-UI强力驱动\n更多信息：http://win10ui.yuri2.cn \nWin10-UI,轻松打造别具一格的后台界面 ','The page is strongly driven by Win10-UI.\nFor more info: http://win10ui.yuri2.cn.\n Win10-UI, easy to create a unique background interface.'))
-        },2000);
+        },2000);*/
         //点击清空右键菜单
         $(document).click(function () {
             Win10._removeContextMenu();
@@ -684,7 +684,7 @@ var Win10 = {
         this._animated_liveness=animated_liveness;
     },
     exit:function () {
-        layer.confirm(Win10.lang('确认要关闭本页吗?','Are you sure you want to close this page?'), {icon: 3, title:Win10.lang('提示','Prompt')}, function(index){
+        /*layer.confirm(Win10.lang('确认要关闭本页吗?','Are you sure you want to close this page?'), {icon: 3, title:Win10.lang('提示','Prompt')}, function(index){
             document.body.onbeforeunload = function(){};
             window.location.href="about:blank";
             window.close();
@@ -693,7 +693,7 @@ var Win10 = {
                 skin: 'layui-layer-lan'
                 ,closeBtn: 0
             });
-        });
+        });*/
 
     },
     lang:function (cn,en) {
@@ -706,14 +706,10 @@ var Win10 = {
             closeBtn: 1, //不显示关闭按钮
             anim: 2,
             skin: 'layui-layer-molv',
-            title: 'win10-ui v1.1.170802',
+            title: '丝路卫星通信公司',
             shadeClose: true, //开启遮罩关闭
             area: ['420px', '240px'], //宽高
-            content: '<div style=\'padding: 10px\'>' +
-            '<p>支持组件:layer、jquery、animated.css、font-awesome</p>' +
-            '<p>尤里2号©版权所有</p>' +
-            '<p>作者邮箱:yuri2peter@qq.com</p>' +
-            '</div>'
+            content: 'www.silkroadsat.com'
         });
     },
     setContextMenu:function (jq_dom, menu) {
